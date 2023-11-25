@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGO-GREEN</title>
+
+    <link href="stilo.css" style type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="menu">
+        <img src="EGO VETORIZADA.htm1.png" />
+        <nav class="chefe">
+            <ul>
+                <li><button class="btn"><span><a href="#container">Carros</a></span></button></li>
+                <li><button class="btn"><span> Contatos </span></button></li>
+                <li><button class="btn" onclick="openForm ()"><span> Cadastro </span></button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="divLDH">
+        <header class="Local-data-hora">
+            <input list="cidades" name="cidades" id="local" />
+            <datalist id="cidades">
+                <option value="Faria Lima">
+                <option value="Vila Mariana">
+                <option value="Paulista">
+            </datalist>
+
+            <input type="date" class="txtdata" name="txtdata">
+
+            <input type="time" class="time1" name="time1"> <input type="time" class="time2" name="time2">
+        </header>
+    </div>
+    <br />
+    <div class="divcar">
+        <section id="carrosel">
+            <img id="img_slide" name="slide" src="transferir (2).jpg" />
+            <form id="botoes_slide">
+                <input type="radio" id="v1" name="m" onclick="Muda(1)" />
+                <input type="radio" id="v2" name="m" onclick="Muda(2)" />
+                <input type="radio" id="v3" name="m" onclick="Muda(3)" />
+            </form>
+        </section>
+
+        <script language="JavaScript">
+            var contador = 1;
+            //imagens de exemplo - trocar por promoções e outros
+            var img1 = "transferir (2).jpg";
+            var img2 = "transferir (4).jpg";
+            var img3 = "dolphin.png";
+            var tempo = 1500;
+            var exibir = setInterval("Exibindo()", tempo);
+
+            function Exibindo() {
+                document.images["slide"].src = eval("img" + contador);
+                document.getElementById("v" + contador).checked = true;
+
+                if (contador < 3)
+                    contador++;
+                else
+                    contador = 1;
+            }
+
+            function Muda(x) {
+                clearInterval(exibir);
+                contador = x;
+                exibir = setInterval("Exibindo()", tempo);
+            } 
+        </script>
+    </div>
+
+    <div id="container" class="container">
+        <div id="auto1" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="dolphin.png" alt="Veiculo Eletrico">
+                    <H2>BYD DOLPLIN</H2>
+                    <li>291 Km de Autonomia</li>
+                    <li>Carga Rapida</li>
+                    <li>e-Platform 3.0, Eficiência, inteligência, segurança e estética</li>
+                    <li>Linha Ocean,Inspirada nos animais marinhos e oceano</li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="auto2" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
+                    <h2>PEUGEOT E-208</h2>
+                    <li>220 Km de Autonomia</li>
+                    <li>Recarga Rapida</li>
+                    <li>Sofisticado, inteligente e imponente </li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="auto3" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="transferir (4).jpg" alt="Veiculo Eletrico">
+                    <h2>NISSAN LEAF</h2>
+                    <li>272 km de Autonomia</li>
+                    <li>Recarga Rapida</li>
+                    <li>Até 75% mais econômico do que abastecer um carro com gasolina</li>
+                    <li>Primeiro veiculo Eletrico Japones no Brasil</li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div id="container1" class="container">
+        <div id="auto4" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="dolphin.png" alt="Veiculo Eletrico">
+                    <H2>BYD DOLPLIN</H2>
+                    <li>291 Km de Autonomia</li>
+                    <li>Carga Rapida</li>
+                    <li>e-Platform 3.0, Eficiência, inteligência, segurança e estética</li>
+                    <li>Linha Ocean,Inspirada nos animais marinhos e oceano</li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="auto5" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
+                    <h2>PEUGEOT E-208</h2>
+                    <li>220 Km de Autonomia</li>
+                    <li>Recarga Rapida</li>
+                    <li>Sofisticado, inteligente e imponente </li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="auto6" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="transferir (4).jpg" alt="Veiculo Eletrico">
+                    <h2>NISSAN LEAF</h2>
+                    <li>272 km de Autonomia</li>
+                    <li>Recarga Rapida</li>
+                    <li>Até 75% mais econômico do que abastecer um carro com gasolina</li>
+                    <li>Primeiro veiculo Eletrico Japones no Brasil</li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div id="container2" class="container">
+        <div id="auto7" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="dolphin.png" alt="Veiculo Eletrico">
+                    <H2>BYD DOLPLIN</H2>
+                    <li>291 Km de Autonomia</li>
+                    <li>Carga Rapida</li>
+                    <li>e-Platform 3.0, Eficiência, inteligência, segurança e estética</li>
+                    <li>Linha Ocean,Inspirada nos animais marinhos e oceano</li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="auto8" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
+                    <h2>PEUGEOT E-208</h2>
+                    <li>220 Km de Autonomia</li>
+                    <li>Recarga Rapida</li>
+                    <li>Sofisticado, inteligente e imponente </li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="auto9" class="box">
+            <section class="borda">
+                <ul>
+                    <img id="carros_box" src="transferir (4).jpg" alt="Veiculo Eletrico">
+                    <h2>NISSAN LEAF</h2>
+                    <li>272 km de Autonomia</li>
+                    <li>Recarga Rapida</li>
+                    <li>Até 75% mais econômico do que abastecer um carro com gasolina</li>
+                    <li>Primeiro veiculo Eletrico Japones no Brasil</li>
+                    <li><a href="#nav-menu">VOLTAR</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="formCad" id="formulario">
+        <form action="mailto:fabricioqualityassurance@gmail.com" method="post" enctype="text/plain">
+            <h3>CADASTRO</h3>
+
+            <label for="nome">NOME</label>
+            <input type="text" placeholder="DIGITE SEU NOME" name="nome" id="nome" required>
+
+            <label for="CPF">CPF</label>
+            <input type="text" placeholder="DIGITE CPF" name="cpf" id="cpf" required>
+
+            <label for="emder">RUA</label>
+            <input type="text" placeholder="DIGITE ENDEREÇO" name="rua" id="rua" required>
+
+            <label for="numero">NUMERO</label>
+            <INput type="text" placeholder=" DIGITEO NUMERO" name="N°" id="numero" required>
+
+            <label for="city">CIDADE</label>
+            <input type="text" placeholder="DIGITE CIDADE ONDE RESIDE" name="cidade" id="cidade" required>
+
+            <label for="uf"></label>
+            <select name="EST" id="uf" required>ESTADO
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+
+
+
+            </select>
+
+            <input type="submit" class="btn" Enviar />
+            <button type="button" class="btn cancel" onclick="closeForm()">FECHAR</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("formulario").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("formulario").style.display = "none";
+        }
+    </script>
+
+     <div id="abrirMaps" class="maps" style="display: none;">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.976095722564!2d-46.781659725343424!3d-23.533362160562845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff0fa936bdb9%3A0x43a21091ffb7f822!2sR.%20Ant%C3%B4nio%20Ag%C3%BA%20-%20Centro%2C%20Osasco%20-%20SP%2C%2006093-006!5e0!3m2!1spt-BR!2sbr!4v1700871256053!5m2!1spt-BR!2sbr" width="400" height="400" style="border:50;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="btnfecharmaps" onclick="fecharMaps()">Fechar</button>
+      </div>
+
+    <footer>
+        <button  id="btn_maps" class="btn_footer" type="button" onclick="Displaymaps()" > <span> Maps </span> </button>
+        <button class="btn_footer" onclick="navegar('https://wa.me/message/EV6VF5Z7VREOE1')"> <span> Whatsapp </span> </button>
+        <button class="btn_footer" onclick="navegar('https://www.instagram.com/egogreenrentals')"> <span> Insta </span> </button>
+        <button class="btn_footer" onclick="navegar('https://www.facebook.com/')" > <span> Facebook </span> </button>
+
+    </footer>
+
+   
+      
+      <script>
+        
+      
+        function Displaymaps() {
+           document.getElementById("abrirMaps").style.display = "block";
+          
+        }
+
+       function fecharMaps(){
+           document.getElementById("abrirMaps").style.display = "none";
+       }
+       function navegar(url){
+        window.location.href = url;
+       }
+
+      </script>
+
+</body>
+
+</html>
