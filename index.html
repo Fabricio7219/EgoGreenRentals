@@ -16,7 +16,7 @@
         <nav class="chefe">
             <ul>
                 <li><button class="btn"><span><a href="#container">Carros</a></span></button></li>
-                <li><button class="btn"><span> Contatos </span></button></li>
+                <li><button class="btn"><span><a href="#btn_maps"> Contatos</a></span></button></li>
                 <li><button class="btn" onclick="openForm ()"><span> Cadastro </span></button></li>
             </ul>
         </nav>
@@ -77,8 +77,8 @@
         <div id="auto1" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="dolphin.png" alt="Veiculo Eletrico">
-                    <H2>BYD DOLPLIN</H2>
+                    <img  class="imgCar" src="dolphin.png" alt="Veiculo Eletrico">
+                    <H2>BYD DOLPLIN</H2> 
                     <li>291 Km de Autonomia</li>
                     <li>Carga Rapida</li>
                     <li>e-Platform 3.0, Eficiência, inteligência, segurança e estética</li>
@@ -90,7 +90,7 @@
         <div id="auto2" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
+                    <img  class="imgCar" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
                     <h2>PEUGEOT E-208</h2>
                     <li>220 Km de Autonomia</li>
                     <li>Recarga Rapida</li>
@@ -102,7 +102,7 @@
         <div id="auto3" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="transferir (4).jpg" alt="Veiculo Eletrico">
+                    <img class="imgCar" src="transferir (4).jpg" alt="Veiculo Eletrico">
                     <h2>NISSAN LEAF</h2>
                     <li>272 km de Autonomia</li>
                     <li>Recarga Rapida</li>
@@ -117,7 +117,7 @@
         <div id="auto4" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="dolphin.png" alt="Veiculo Eletrico">
+                    <img  class="imgCar" src="dolphin.png" alt="Veiculo Eletrico">
                     <H2>BYD DOLPLIN</H2>
                     <li>291 Km de Autonomia</li>
                     <li>Carga Rapida</li>
@@ -130,7 +130,7 @@
         <div id="auto5" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
+                    <img  class="imgCar" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
                     <h2>PEUGEOT E-208</h2>
                     <li>220 Km de Autonomia</li>
                     <li>Recarga Rapida</li>
@@ -142,7 +142,7 @@
         <div id="auto6" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="transferir (4).jpg" alt="Veiculo Eletrico">
+                    <img  class="imgCar" src="transferir (4).jpg" alt="Veiculo Eletrico">
                     <h2>NISSAN LEAF</h2>
                     <li>272 km de Autonomia</li>
                     <li>Recarga Rapida</li>
@@ -157,7 +157,7 @@
         <div id="auto7" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="dolphin.png" alt="Veiculo Eletrico">
+                    <img  class="imgCar" src="dolphin.png" alt="Veiculo Eletrico">
                     <H2>BYD DOLPLIN</H2>
                     <li>291 Km de Autonomia</li>
                     <li>Carga Rapida</li>
@@ -170,7 +170,7 @@
         <div id="auto8" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
+                    <img class="imgCar" src="peugeot-e-2008-2024-2.webp" alt="Veiculo Eletrico">
                     <h2>PEUGEOT E-208</h2>
                     <li>220 Km de Autonomia</li>
                     <li>Recarga Rapida</li>
@@ -182,7 +182,7 @@
         <div id="auto9" class="box">
             <section class="borda">
                 <ul>
-                    <img id="carros_box" src="transferir (4).jpg" alt="Veiculo Eletrico">
+                    <img class="imgCar" src="transferir (4).jpg" alt="Veiculo Eletrico">
                     <h2>NISSAN LEAF</h2>
                     <li>272 km de Autonomia</li>
                     <li>Recarga Rapida</li>
@@ -269,12 +269,13 @@
         <button class="btnfecharmaps" onclick="fecharMaps()">Fechar</button>
       </div>
 
-    <footer>
-        <button  id="btn_maps" class="btn_footer" type="button" onclick="Displaymaps()" > <span> Maps </span> </button>
-        <button class="btn_footer" onclick="navegar('https://wa.me/message/EV6VF5Z7VREOE1')"> <span> Whatsapp </span> </button>
-        <button class="btn_footer" onclick="navegar('https://www.instagram.com/egogreenrentals')"> <span> Insta </span> </button>
-        <button class="btn_footer" onclick="navegar('https://www.facebook.com/')" > <span> Facebook </span> </button>
+    <footer >
+        <button  id="btn_maps" class="btn_footer" type="button" onclick="Displaymaps()" > <span class="iconfooter" > <img src="692171_google_maps_direction_line-icon_location_icon.png" alt=""></span> </button>
+        <button class="btn_footer"  onclick="navegar('https://wa.me/message/EV6VF5Z7VREOE1')" >  <span class="iconfooter" ><img src="843786_whatsapp_icon.png" alt=""></span> </button>
+        <button class="btn_footer" onclick="navegar('https://www.instagram.com/egogreenrentals')"> <span class="iconfooter"><img src="5335781_camera_instagram_social media_instagram logo_icon.png" alt=""></span>  </button>
+        <button class="btn_footer" onclick="navegar('https://www.facebook.com/')" > <span class="iconfooter"> <img src="6214714_facebook_logo_icon.png" alt=""> </span> </button>
 
+                  <span>DevHarmonize, direitos reservados</span>
     </footer>
 
    
